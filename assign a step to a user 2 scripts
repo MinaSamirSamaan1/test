@@ -1,0 +1,17 @@
+var users=tw.system.org.findTeamByName("PM").allUsers
+tw.local.results=[];
+for (var i=0;i<users.length;i++) {
+tw.local.results[i]=users[i].name;
+}
+
+
+
+
+tw.local.filteredTeam={};
+tw.local.filteredTeam.members =[];
+tw.local.filteredTeam.name = "TEAM_MRP";
+tw.local.filteredTeam.members[0] = tw.local.controller;
+// don't forget the delete this one. It's for testing
+//tw.local.filteredTeam.members[1] = "karol";
+//tw.local.filteredTeam.name=tw.local.controller;
+/*tw.local.filteredTeam.members[0] = "mrp1";
