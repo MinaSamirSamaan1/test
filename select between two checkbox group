@@ -1,0 +1,5 @@
+var itemsChoosen = ${Checkbox_Group5}.getData().items;
+${Checkbox_Group6}.clearItems();
+for (var i=0; i<itemsChoosen.length; i++) {
+${Checkbox_Group6}.appendItem(itemsChoosen[i].name,itemsChoosen[i].value);
+}
